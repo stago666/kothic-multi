@@ -1,0 +1,167 @@
+<HTML>
+<HEAD>
+    <TITLE>smileys</TITLE>
+</HEAD>
+<BODY topmargin=1>
+
+<PRE><FONT FACE="Verdana"
+           COLOR="#0000FF">comment installer le script rapidement ???</FONT><FONT
+        FACE="Verdana">
+    &nbsp;
+    &nbsp;
+    En fait, ce chat, est d'une simplicit&eacute; enfantine &agrave; installer et &agrave; g&eacute;rer ( m&ecirc;me moi
+    y suis arriv&eacute; ;-)
+    &nbsp;</FONT><FONT FACE="Verdana" COLOR="#0000FF">
+    Il poss&egrave;de les avantages suivants :</FONT><FONT
+        FACE="Verdana">
+    &nbsp;
+    - Utilisation des feuilles de style en CSS pour un affichage plus agr&eacute;able
+    - Rafra&icirc;chissement des pages sans effacer le message tap&eacute; en cours
+    - Ajout de Smileys par clic sur l'un d'eux ou par la passage par un code sp&eacute;cial
+    - Filtrage des mots interdits et des grossi&egrave;ret&eacute;s
+    - Transformation automatique de texte en lien ( http:// ou @ )
+    - Interdiction du html pour &eacute;viter tout code malveillant
+    - Pas d'inscription pr&eacute;alable
+    - Ne n&eacute;cessite pas de base de donn&eacute;es en Mysql, les messages sont stock&eacute;s dans un simple
+    fichier texte
+    - Rapide
+    - Adapt&eacute; pour les personnes qui naviguent en 800 x 600 px
+    &nbsp;
+    Evidemment, ne vous attendez pas &agrave; poss&eacute;der un chat du genre Lycos-Caramail avec 30 000 connect&eacute;s
+    ;-)
+    Ce script est id&eacute;al pour les petits et moyens sites, et permettra au webmaster de dialoguer avec ses
+    visiteurs ! Perso, je l'ai test&eacute; sous Free avec 10 personnes connect&eacute;es sans probl&egrave;me !
+    &nbsp;</FONT><FONT FACE="Verdana" COLOR="#0000FF">
+    Ce que le script ne permet pas :</FONT><FONT FACE="Verdana">
+    &nbsp;
+    D'exclure un membre, ou de supprimer un message en temps r&eacute;el
+    &nbsp;</FONT><FONT FACE="Verdana" COLOR="#0000FF">
+    Voyons maintenant le script d'un peu plus pr&egrave;s</FONT><FONT
+        FACE="Verdana">
+    &nbsp;
+    Tout d'abord, pour que les nouveaux messages soient affich&eacute;s, un rafra&icirc;chissement automatique de la
+    page est obligatoire, autrement, vous ne verriez que vos propres messages ;-)
+    &nbsp;</FONT><FONT FACE="Verdana" COLOR="#0000FF">
+    Pour d&eacute;finir la dur&eacute;e du rafra&icirc;chissement, ouvrez le fichier nomm&eacute; rafraichir.php, et
+    localisez cette ligne :</FONT><FONT
+        FACE="Verdana">
+    &nbsp;
+    &lt;meta http-equiv="refresh" content="6"&gt;
+    le 6 = le nombre de secondes avant une nouvelle mise &agrave; jour de la page, &agrave; vous de configurer si vous
+    d&eacute;sirez augmenter ou diminuer cette dur&eacute;e
+    &nbsp;</FONT><FONT FACE="Verdana" COLOR="#0000FF">
+    Pour filtrer les insultes, ouvrez le fichier nomm&eacute; insultes.php</FONT><FONT
+        FACE="Verdana">
+    &nbsp;
+    Voici les 2 lignes qui s'y trouvent :
+    &nbsp;
+    &lt;?
+    $lapagemagique = str_replace("</FONT><FONT FACE="Verdana"
+                                               COLOR="#0000AF">pute</FONT><FONT
+        FACE="Verdana">","&lt;font class=lapagemagique&gt;mot interdit",$lapagemagique);
+    $lapagemagique = str_replace("</FONT><FONT FACE="Verdana"
+                                               COLOR="#0000AF">connard</FONT><FONT
+        FACE="Verdana">","&lt;font class=lapagemagique&gt;mot interdit",$lapagemagique);
+    ?&gt;
+    &nbsp;</FONT><FONT FACE="Verdana" COLOR="#0000FF">
+    Comment ajouter une nouvelle insulte ????</FONT><FONT FACE="Verdana">
+    &nbsp;
+    Rien de plus facile, il vous suffira de faire un copier-coller d'une ligne et de changer le mot d'insulte
+    &nbsp;</FONT><FONT FACE="Verdana" COLOR="#0000FF">
+    Exemple :</FONT><FONT FACE="Verdana">
+    &nbsp;
+    $lapagemagique = str_replace("</FONT><FONT FACE="Verdana"
+                                               COLOR="#0000AF">pute</FONT><FONT
+        FACE="Verdana">","&lt;font class=lapagemagique&gt;mot interdit",$lapagemagique);
+    remplacez le mot pute par couillon
+    $lapagemagique = str_replace("</FONT><FONT FACE="Verdana"
+                                               COLOR="#AF0000">couillon</FONT><FONT
+        FACE="Verdana">","&lt;font class=lapagemagique&gt;mot interdit",$lapagemagique);
+    &nbsp;
+    ce qui donnera :
+    &nbsp;
+    &lt;?
+    $lapagemagique = str_replace("</FONT><FONT FACE="Verdana"
+                                               COLOR="#0000AF">pute</FONT><FONT
+        FACE="Verdana">","&lt;font class=lapagemagique&gt;mot interdit",$lapagemagique);
+    $lapagemagique = str_replace("</FONT><FONT FACE="Verdana"
+                                               COLOR="#0000AF">connard</FONT><FONT
+        FACE="Verdana">","&lt;font class=lapagemagique&gt;mot interdit",$lapagemagique);
+    $lapagemagique = str_replace("</FONT><FONT FACE="Verdana"
+                                               COLOR="#AF0000">couillon</FONT><FONT
+        FACE="Verdana">","&lt;font class=lapagemagique&gt;mot interdit",$lapagemagique);
+    ?&gt;
+    &nbsp;
+    etc, etc.....De ce c&ocirc;t&eacute;, je vous fais confiance pour trouver de belles insultes &agrave; rajouter ;-)
+    &nbsp;</FONT><FONT FACE="Verdana" COLOR="#0000FF">
+    Comment remplacer le texte mot interdit par une image ????</FONT><FONT
+        FACE="Verdana">
+    &nbsp;
+    facile, regardez cet exemple :
+    &nbsp;</FONT><FONT FACE="Verdana" COLOR="#0000FF">
+    &eacute;tape 1</FONT><FONT FACE="Verdana">
+    &nbsp;
+    dans le dossier images, ajoutez une ic&ocirc;ne que vous nommerez par exemple interdit.gif et dont
+    la taille sera de 15 x 15 pixels
+    &nbsp;</FONT><FONT FACE="Verdana" COLOR="#0000FF">
+    &eacute;tape 2</FONT><FONT FACE="Verdana">
+    &nbsp;
+    voici une ligne d'insulte standard
+    &nbsp;
+    $lapagemagique = str_replace("</FONT><FONT FACE="Verdana"
+                                               COLOR="#0000AF">pute</FONT><FONT
+        FACE="Verdana">","&lt;font class=lapagemagique&gt;mot interdit",$lapagemagique);
+    &nbsp;
+    voici une ligne d'insulte avec l'image
+    &nbsp;
+    $lapagemagique = str_replace("</FONT><FONT FACE="Verdana"
+                                               COLOR="#0000AF">pute</FONT><FONT
+        FACE="Verdana">","&lt;img src=images/interdit.gif align=absmiddle border=0&gt;",$lapagemagique);
+    &nbsp;
+    En fait, la fonction str_replace ( string replace, et on ne rigole pas ;-)
+    sert en php &agrave; remplacer une cha&icirc;ne de caract&egrave;res par une autre
+    &nbsp;</FONT><FONT FACE="Verdana" COLOR="#0000FF">
+    Maintenant, on &eacute;teind la lumi&egrave;re, ambiance Ardisson : la question qui tue !</FONT><FONT
+        FACE="Verdana">
+    &nbsp;
+    Comment faire pour ne pas que le fichier chat.txt ( celui qui enregistre les messages)
+    ne devienne pas trop lourd &agrave; la longue ????
+    &nbsp;
+    Pour cela il suffit de d&eacute;finir le nombre maxi de lignes que le fichier texte devra conserver en m&eacute;moire
+    ouvrez les fichiers : chat.php &amp; messages.php puis localisez cette ligne : </FONT><FONT
+        FACE="Verdana" COLOR="#0000FF">$max=20</FONT><FONT FACE="Verdana">;
+    donc </FONT><FONT FACE="Verdana" COLOR="#0000FF">20</FONT><FONT
+        FACE="Verdana"> lignes seront affich&eacute;es dans le chat et enregistr&eacute;es dans le fichier chat.txt
+    &nbsp;</FONT><FONT FACE="Verdana" COLOR="#0000FF">
+    Conclusion</FONT><FONT FACE="Verdana">
+    &nbsp;
+    Evidemment, l'on pourrait rajouter des fonctions suppl&eacute;mentaires &agrave; ce chat, du genre :
+    &nbsp;
+    filtrage des ip, gestion des connect&eacute;s, admin en ligne, etc, etc...........
+    Mais justement, ce petit chat &agrave; pour simple but, le fait de proposer un peu de
+    convivialit&eacute; sur votre site Web, et telle est sa seule pr&eacute;tention !
+    &nbsp;</FONT><FONT FACE="Verdana" COLOR="#0000FF">
+    Derni&egrave;re note </FONT><FONT FACE="Verdana">
+    &nbsp;
+    dans le fichier de feuilles de styles externes nomm&eacute; </FONT><FONT
+        FACE="Verdana" COLOR="#0000FF">style.css</FONT><FONT
+        FACE="Verdana">, regardez bien cette ligne :</FONT><FONT
+        FACE="Verdana" COLOR="#0000FF">
+    overflow:hidden</FONT><FONT
+        FACE="Verdana">, cette fonction permet tout simplement de supprimer la barre de scroll
+    dans toutes vos pages.
+    &nbsp;
+    Ren&eacute; le 4 juin 2003
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;</FONT>
+&nbsp;</PRE>
+</BODY>
+</HTML>

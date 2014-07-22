@@ -1,0 +1,382 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    position: relative;
+    margin: 0;
+}
+
+a,
+a:hover,
+a:focus {
+    color: #af0000;
+    text-decoration: none;
+}
+
+#kothic {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -45px;
+
+    background-color: #1c1c1c;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+}
+
+.banner-home img {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.wg-title {
+    height: 40px;
+    position: relative;
+}
+
+.wg-title .left-header {
+    width: 100%;
+    height: 40px;
+}
+
+.wg-title .left-header .wg-title-text {
+    display: block;
+    line-height: 40px;
+    padding-left: 5px;
+    margin-right: 150px;
+
+    font-family: 'Cuprum', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px rgba(0,0,0,0.5);
+    white-space: nowrap;
+
+    background-image: url("../img/block_header_bg.png");
+    background-position: left;
+    background-repeat: repeat no-repeat;
+}
+
+.wg-title .right-header {
+    background-image: url("../img/block_header_right.png");
+    background-position: right;
+    background-repeat: no-repeat no-repeat;
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.wg-block {
+    margin-bottom: 15px;
+    background-color: #e5e5e5;
+    background-image: url("../img/block_footer_bg.png");
+    background-repeat: repeat no-repeat;
+    background-position: left bottom;
+    padding: 0 0 8px 0;
+    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+}
+
+.block-inline {
+    display: inline-block;
+}
+
+#kothic > .container-fluid {
+    padding-top: 60px;
+}
+
+#footer, #push {
+    height: 45px;
+}
+
+#footer .footer {
+    background-image: url("../img/footer_bg.png");
+    background-position: left;
+    background-repeat: repeat no-repeat;
+
+    position: relative;
+    height: 45px;
+}
+
+#footer .footer .footer-left {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#footer a:hover {
+	text-decoration: none;
+}
+
+#footer .footer .footer-content {
+    height: 45px;
+    padding: 7px 5px 3px 45px;
+}
+
+#footer .footer .footer-content > div {
+    height: 35px;
+    line-height: 35px;
+}
+
+#footer .footer .footer-content img {
+    height: 35px;
+    width: 35px;
+}
+
+#footer .footer .footer-content .copyright {
+    display: block;
+    font-size: 0.8em;
+    line-height: 17px;
+}
+
+#news .newsBoard .newsContent {
+    margin-top: 15px;
+}
+
+#news .newsBoard .newsContent img {
+    margin: 5px;
+}
+
+#news .newsBoard .newsContent img.smiley {
+    margin : 0;
+}
+
+#news .newsBoard .newsFooter {
+    margin-top: 10px;
+    padding: 10px;
+    height: 130px;
+}
+
+#news .newsBoard .newsFooter .comments {
+    line-height: 110px;
+}
+
+#news .newsBoard .newsFooter .comments a {
+    background-color: #d9d9d9;
+    padding: 5px 10px;
+    box-shadow: 2px 2px 2px -1px rgba(0,0,0,0.5);
+}
+
+#news .newsBoard .newsFooter .author {
+    background-color: #d9d9d9;
+    padding: 5px 10px;
+    box-shadow: 2px 2px 2px -1px rgba(0,0,0,0.5);
+    position: relative;
+    height: 110px;
+}
+
+#news .newsBoard .newsFooter .author .avatar {
+    width: 100px;
+    height: 100px;
+    text-align: right;
+    position: absolute;
+    left: 5px;
+}
+
+#news .newsBoard .newsFooter .author .avatar img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#news .newsBoard .newsFooter .author .authorData {
+    margin-left: 100px;
+    padding: 5px;
+}
+
+#roster .roster-content .roster-member {
+    position: relative;
+    line-height: 100px;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+#roster .roster-content .roster-member .avatar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#roster .roster-content .roster-member .avatar > img {
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#roster .roster-content .roster-member .roster-member-nfo {
+    padding-left: 100px;
+}
+
+#roster .roster-content .roster-member .roster-member-nfo .member-name,
+#roster .roster-content .roster-member .roster-member-nfo .member-rank,
+#roster .roster-content .roster-member .roster-member-nfo .member-activity {
+    font-family: 'Cuprum', sans-serif;
+    color: #121212;
+    font-size: 1.3em;
+}
+
+#gametracker .gametrackerLine {
+    text-align: center;
+}
+
+#lastMsgs .lstMsgLine {
+    margin-top: 5px;
+}
+
+#lastMsgs .lstMsgLine .lstMsgText {
+    padding: 0 15px;
+}
+
+#sections .sectionContent .sectionLine:hover {
+    opacity: 0.8;
+    background-color: #d7d7d7;
+}
+
+#sections .sectionContent .sectionLine > a.row {
+    position: relative;
+    width: 100%;
+    display: block;
+    height: 35px;
+}
+
+#sections .sectionContent .sectionLine > a.row:hover,
+#sections .sectionContent .sectionLine > a.row:focus {
+    text-decoration: none;
+}
+
+
+#sections .sectionContent .sectionLine .sectionImg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 57px;
+    height: 35px;
+}
+
+#sections .sectionContent .sectionLine .sectionImg > img {
+    position: relative;
+    z-index: 500;
+    width: 100%;
+    height: auto;
+}
+
+#sections .sectionContent .sectionLine .sectionImg .sectionIcon {
+    position: absolute;
+    left: 9px;
+    top: 2px;
+    width: 31px;
+    height: 31px;
+    padding: 3px;
+}
+
+#sections .sectionContent .sectionLine .sectionImg .sectionIcon > img {
+    position: relative;
+    z-index: 499;
+    width: 100%;
+    height: 100%;
+
+    background-color: #ffffff;
+}
+
+#sections .sectionContent .sectionLine .sectionText {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: 57px;
+    line-height: 35px;
+}
+
+#sections .sectionContent .sectionLine .sectionText > span {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 16px;
+    color : #777;
+}
+
+#sections .sectionContent .sectionLine:hover .sectionText > span {
+    color: #555;
+}
+
+#navbar.navbar-default,
+#navbar.navbar-default .dropdown .dropdown-menu {
+    background-color: #E6E6E6;
+    background-image: url("../img/navbar_bg.png");
+    background-position: left bottom;
+    background-repeat: repeat no-repeat;
+
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5);
+    border: none;
+}
+
+#navbar.navbar-default .dropdown .dropdown-menu {
+    top: 47px;
+    padding: 0 0 4px 0;
+    margin: 0;
+
+    border-radius: 0px 0px 0px 0px;
+}
+
+#navbar.navbar-default .navbar-nav > .active > a,
+#navbar.navbar-default .navbar-nav > .active > a:hover,
+#navbar.navbar-default .navbar-nav > .active > a:focus,
+#navbar.navbar-default .navbar-nav > .open > a,
+#navbar.navbar-default .navbar-nav > .open > a:hover,
+#navbar.navbar-default .navbar-nav > .open > a:focus,
+#navbar.navbar-default .dropdown .dropdown-menu>li>a:hover,
+#navbar.navbar-default .dropdown .dropdown-menu>li>a:focus,
+#navbar.navbar-default .dropdown .dropdown-menu>.active>a,
+#navbar.navbar-default .dropdown .dropdown-menu>.active>a:hover,
+#navbar.navbar-default .dropdown .dropdown-menu>.active>a:focus {
+    background-color: transparent;
+}
+
+#navbar.navbar-default .navbar-nav li > a > span.links {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 16px;
+    color : #777
+}
+
+#navbar.navbar-default .navbar-nav li.active > a > span.links,
+#navbar.navbar-default .navbar-nav li > a:hover > span.links,
+#navbar.navbar-default .navbar-nav li > a:focus > span.links,
+#navbar.navbar-default .navbar-nav li.open > a > span.links,
+#navbar.navbar-default .navbar-nav li > a:hover > span.links,
+#navbar.navbar-default .navbar-nav li > a:focus > span.links {
+    color : #555;
+}
+
+#navbar.navbar-default .navbar-nav li > a > span.links {
+    padding-left: 8px;
+}
+
+#navbar.navbar-default .navbar-nav li.active > a > span.links,
+#navbar.navbar-default .navbar-nav li.open > a > span.links,
+#navbar.navbar-default .navbar-nav li > a:hover > span.links {
+    border-left: 4px solid #7D0000;
+    padding-left: 4px;
+}
+
+#navbar.navbar-default .navbar-nav.navbar-right li > a.user-shortcuts {
+    position: relative;
+}
+
+#navbar.navbar-default .navbar-nav.navbar-right li > a.user-shortcuts > span {
+    margin-right : 35px;
+}
+
+#navbar.navbar-default .navbar-nav.navbar-right li > a > img {
+    max-width : 40px;
+    max-height : 40px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}

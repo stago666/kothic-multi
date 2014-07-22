@@ -1,0 +1,60 @@
+A:link {
+    color: 000000;
+    text-decoration: none
+}
+
+A:visited {
+    color: 444444
+}
+
+A:hover {
+    color: 000000;
+    text-decoration: none
+}
+
+body {
+    background-color: ffffff;
+    overflow: hidden
+}
+
+.lapagemagique {
+    color: 000000;
+    font-family: Verdana;
+    font-size: 10
+}
+
+.lapagemagique1 {
+    color: 7 d7dff;
+    font-family: Verdana;
+    font-size: 10
+}
+
+.lapagemagique2 {
+    color: 0000 ff;
+    font-family: Verdana;
+    font-size: 10
+}
+
+.pseudo {
+    font-family: Verdana;
+    font-size: 10;
+    border-style: solid;
+    border-color: 000000;
+    border-width: 1
+}
+
+.boutons {
+    font-family: Verdana;
+    font-size: 10;
+    border: 0;
+    background-color: 003366;
+    color: gold;
+    height: 17
+}
+
+.tableaux {
+    border-style: solid;
+    border-color: 000000;
+    border-width: 1
+}
+
